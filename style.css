@@ -1,0 +1,408 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000000;
+}
+body{
+    display: flex;
+   position: relative;
+}
+
+p{
+    font-family: sans-serif;
+}
+a > p{
+    display: none;
+}
+a:hover > p{
+    display: block;
+    color: #fff;
+}
+
+.ul {
+    
+    list-style: none;
+   display: flex;
+   flex-direction: column;
+    justify-content: baseline;
+    align-items: end;
+    gap: .2rem;
+    background-color: #000000;
+    color: white;
+    width: 340px;
+    height: 100vh;
+    /* position: fixed; */
+  
+}
+
+li a{
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+   
+}
+
+ /* li> a:hover > svg{
+    
+}
+.header > li a:hover{
+   
+  
+} */
+main{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+    min-width: 300px;
+    max-width: 1400px;
+    margin-top: 30px;
+    padding-top: 15px;
+    
+}
+.settings{
+    text-decoration: none;
+    color: #fff;
+}
+.explore > a:hover{
+    background-color: #71767b;
+    color: #fff;
+    border-radius: 50%;
+    height: 50px;
+}
+article > span{
+    color: #e7e9ea;
+   font-size: 1.2em;
+   font-weight: bold;
+   font-family: sans-serif;
+}
+
+.explore{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;  
+    top: 0;
+    bottom: 0;
+    border-right: .1px solid #71767b;
+    border-left: .1px solid #71767b;
+    background-image: linear-gradient(to bottom,  transparent);
+    width: 40%;
+    height: 6.6vh;
+    padding: 15px;
+}
+.explore > span {
+    cursor: pointer;
+}
+.box-content{
+    
+    border: 1px solid gray;
+   }
+.content{
+    display: flex;
+    
+    gap: 15px;
+    height: 15vh;
+    margin-left: 20px;
+    
+}
+.content img{
+    width: 48px;
+    height: 48px;
+    margin-top: 25px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 5px;
+}
+
+.info1{
+    
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 3px;
+    padding-top: 32px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+.info1 > img{
+    width: 16px;
+    height: 16px;
+    margin-bottom: 25px;
+    
+}
+.info1 > span{
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+   
+}
+.info1 > span:hover{
+    text-decoration: underline;
+}
+.info1 > p{
+    color: #71767b;
+    font-family: sans-serif;
+}
+.info2{
+    color: #fff;
+    
+}
+
+
+.content2{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-bottom: 1px solid #71767b;
+    
+}
+.box-video{
+   
+    width: 80%;
+   margin: auto;
+}
+.box-img > img{
+    border: 1px solid #71767b;
+    border-radius: 20px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    
+}
+.box-img2 > img{
+    border: 1px solid #71767b;
+    border-radius: 20px;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    
+}
+.video{
+    width: 100%;
+    height: 60vh;
+    border-radius: 20px;
+}
+.coments{
+    display: flex;
+    gap: 13px;
+    cursor: pointer;
+}
+.coments > p{
+    color: #71767b;
+}
+.coments > svg{
+    color: #71767b;
+    width: 18.75px;
+    height: 18.75px;
+}
+.coments > svg:hover{
+    color: cornflowerblue;
+   
+}
+.coments > p:hover{
+    color: cornflowerblue;
+   
+}
+.retwets{
+    display: flex; 
+    gap: 13px;
+    cursor: pointer;
+}
+.retwets > p{
+    color: #71767b;
+}
+.retwets > svg{
+    color: #71767b;
+    width: 18.75px;
+    height: 18.75px;
+}
+.retwets > svg:hover{
+    color: #00FFCA;
+   
+}
+.retwets > p:hover{
+    color: #00FFCA;
+   
+}
+.like{
+    display: flex;
+    gap: 13px;
+    cursor: pointer;
+}
+.like > p{
+    color: #71767b;
+}
+.like > svg{
+    color: #71767b;
+    width: 18.75px;
+    height: 18.75px;
+}
+.like > svg:hover{
+    color: crimson;
+   
+}
+.like > p:hover{
+    color: crimson;
+   
+}
+img > .heart{
+    width: 12px;
+    height: 12px;
+}
+.graphcs{
+    display: flex;
+    gap: 13px;
+    cursor: pointer;
+}
+.graphcs > p{
+    color: #71767b;
+}
+.graphcs > svg{
+    color: #71767b;
+    width: 18.75px;
+    height: 18.75px;
+}
+.graphcs > svg:hover{
+    color: cornflowerblue;
+   
+}
+.graphcs > p:hover{
+    color: cornflowerblue;
+   
+}
+.share > svg{
+    color: #71767b;
+    width: 18.75px;
+    height: 18.75px;
+    cursor: pointer;
+}
+.share > svg:hover{
+    color: cornflowerblue;
+   
+}
+.interactions{
+    display: flex;
+    justify-content: center;
+    gap: 4.4em;
+    margin-bottom: 20px;
+}
+.img{
+    border-radius: 100%;
+}
+
+form{
+    border: 1px solid #71767b;
+    border-radius: 20px;
+    margin: auto;
+    width: 22em;
+    display: flex;
+    flex-direction: column;
+     gap: 15px;
+     margin: 20px;
+     padding: 16px;
+}
+form > span{
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+form > p {
+    color: #71767b;
+    font-weight: normal;
+    font-size: .9em;
+}
+form > button{
+    width: 90%;
+    height: 3em;
+    border-radius: 50px;
+    border: 1px solid #71767b;
+}
+button{
+    color: #000000;
+    background-color: #fff;
+    cursor: pointer;
+}
+button > svg{
+    color: #000;
+    background-color: #fff;
+   border-radius: 100%;
+}
+button:hover{
+    background-color: #EEEEEE;
+}
+button > p{
+   
+    font-weight: bold;
+    background-color: white;
+}
+.btn1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bold;
+    
+}
+.btn1:hover{
+    background-color: #EEEEEE;
+}
+
+p > a{
+    color: cornflowerblue;
+    text-decoration: none;
+}
+p > a:hover{
+    text-decoration: underline;
+}
+.google{
+    width: 16px;
+    background-color: #fff;
+    border-radius: 100%;
+}
+ .terms {
+    color: #71767b;
+    font-size: .8em;
+    list-style: none;
+}
+.p1 > li:hover{
+    text-decoration: underline;
+    color: #71767b;
+}
+.p2 > li:hover{
+    text-decoration: underline;
+    color: #71767b;
+}
+
+.p{
+    display: flex;
+    justify-content: center;
+    line-height: 0%;
+    color: #71767b;
+
+}
+/* .box3{
+    position: fixed;
+    right: 0;
+} */
+
+
+
+
+ 
+
+
+
