@@ -1,4 +1,3 @@
-
 const menu = [
     {
         id: 1,
@@ -33,27 +32,37 @@ const menu = [
 ];
 
 const boxContent = document.querySelector('.box-content')
+// alert('ola')
+const btn1 = document.getElementById('btn1')
+const span = document.getElementById('close')
+const myModal = document.getElementById('myModal') 
+
+console.log(span)
+console.log(myModal)
+console.log(btn1)
+displayMenuItem(menu)
+DisplayModal()
 
 
-window.addEventListener('DOMContentLoaded', function(){
-    // alert('ola')
-    displayMenuItem(menu)
-    const likes = document.querySelectorAll('.heart')
 
+const likes = document.querySelectorAll('.heart')
 likes.forEach((heart) => {
     heart.addEventListener('click', (e) => {
         let style = e.currentTarget.classList
         if(style.contains('desativado')){
             heart.setAttribute('src', '/icons/coracao-vermelho.svg')
             heart.classList = 'like ativado'
-        }
-        else{
-            heart.setAttribute('src', '/icons/coracao-branco.svg')
-            heart.classList = 'like desativado'
-        }
+    }
+    else{
+        heart.setAttribute('src', '/icons/coracao-branco.svg')
+        heart.classList = 'like desativado'
+    }
     })
-})
-})
+})  
+
+// window.addEventListener('DOMContentLoaded', function(){
+//     myModal.style.display = 'none';
+// })
 
 function displayMenuItem(menuItems){
     let displayMenu = menuItems.map(function(item){
@@ -98,7 +107,7 @@ function displayMenuItem(menuItems){
 
             <abbr title="Curtir">
                 <div class="like">
-                   <img class="heart" src=${item.heart} alt="">
+                   <img class="heart desativado" src=${item.heart} alt="">
                     <p>10k</p>
                 </div>
             </abbr>
@@ -126,6 +135,19 @@ function displayMenuItem(menuItems){
     </article>`
     })
     displayMenu = displayMenu.join('')
-    console.log(displayMenu)
     boxContent.innerHTML = displayMenu
+    // console.log(displayMenu)
 }
+
+function DisplayModal(){
+    btn1.addEventListener('click', () => {
+        myModal.style.display = 'flex';
+    })
+    span.addEventListener('click', () => {
+        myModal.style.display = 'none';
+    })
+}
+
+
+
+
